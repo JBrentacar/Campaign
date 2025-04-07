@@ -1,4 +1,6 @@
-    <script>
+        .copy-content {
+            cursor: pointer;
+        }    <script>
         function selectText(element) {
             const range = document.createRange();
             range.selectNodeContents(element);
@@ -109,9 +111,11 @@
         
         <p class="important">お問い合わせの際は、以下の内容を「その他の欄」にご記入ください：</p>
 
-        <div class="text-container" onclick="selectText(this)">
-            <div class="text-item">船員限定キャンペーン</div>
-            <div class="text-item">紹介者：</div>
+        <div class="text-container">
+            <div class="copy-content" onclick="selectText(this)">
+                <div class="text-item">船員限定キャンペーン</div>
+                <div class="text-item">紹介者：</div>
+            </div>
             <div class="copy-notice">クリックでコピーできます</div>
         </div>
         
